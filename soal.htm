@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0043)http://thienquangphu.com/demo/sliding_quiz/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Soal Latihan</title>
+        
+        <meta name="keywords" content="IMK" /> 
+		<meta name="description" content="Tugas Besar IMK" /> 
+		<meta name="author" content="Administrator" /> 
+		<meta name="developer" content="Agung Panji Sasmito - Shofiyah Al Idrus - Ragil Tri Astuti" /> 
+		<meta name="robots" content="index,follow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Soal Latihan - TEKNIK KOMPUTER DAN JARINGAN - Tugas Besar IMK</title>
+		<link rel="icon" type="image/x-icon" href="./images/icon.jpg"> 
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link rel="stylesheet" href="./component/sliding.quiz.v2.min.css" type="text/css" media="screen">
+        <script type="text/javascript" src="./component/jquery.js"></script>
+        <script type="text/javascript" src="./component/simplemodal.js"></script>
+        <script type="text/javascript" src="./component/sliding.quiz.encode.js"></script>
+     
+    </head>
+    <body>
+        <div class="button-navigation">
+        <a href=index.htm><img src=./component/home.jpg height=50></a></div>
+        <div id="quiz-content1" class="quiz-content"></div>
+		<br>
+		<script type="text/javascript">
+		/*slide quiz*/
+		$(function()
+		    {
+			
+		        $("#quiz-content1").sliding_quiz ({
+					'questions':
+					[
+						{
+							'question'	: 'Tanda gembok (<img src=./soal/1a.jpg>) dibawah ini maksudnya adalah...<br/><center><img src=./soal/1b.jpg></center>',
+							'answers'	: ['Kabel LAN tidak tersambung', 'Firewall diaktifkan', 'Jaringan tidak terkoneksi', 'LAN card tidak terpasang'],
+							'result'	: 2,
+                                                        'explanation'   : 'Tanda gembok menandakan adanya Firewall yang masih diaktifkan. Fungsi firewall yaitu melindungi keamanan jaringan komputer dengan menyaring paket data yang keluar dan masuk di jaringan.<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Hasil suatu perintah ping dari suatu komputer berikut ini, mana yang terbaik…?',
+							'answers'	: ['Reply from 192.168.1.2: bytes=32 time = 5ms TTL=32', 
+											'Reply from 192.168.2.3: bytes=32 time = 15ms TTL=32', 
+											'Reply from 192.168.3.4: bytes=32 time = 25ms TTL=32', 
+											'Reply from 192.168.5.6: bytes=32 time = 1ms TTL=32'],
+							'result'	: 4,
+                                                        'explanation'   : 'Reply from 192.168.5.6: bytes=32 time = 1ms TTL=32 memiliki waktu tanggap yang paling cepat<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Dibawah ini adalah hasil dari suatu perintah...<br/><center><img src=./soal/3.jpg></center>',
+							'answers'	: ['ipconfig /all', 'ipconfig', 'ifconfig', 'pinglocalhost'],
+							'result'	: 1,
+                                                        'explanation'   : 'ipconfig adalah salah satu internal command di MS. Command Prompt (CMD) yang berfungsi untuk melihat dan mengkonfigurasi settingan perangkat jaringan. Sedangakan fungsi khusus pada ipconfig/all adalah menampilkan informasi konfigurasi koneksi, misalnya Host Name, Primary DNS Type, Ethernet Adapter LAN.<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Untuk mengakses CDROM dari komputer orang lain yang sudah disharing, contoh isian di baris Open yang benar adalah...<br/><center><img src=./soal/4.jpg></center>',
+							'answers'	: ['//192.168.103.2/E', '\\Server\E', '\\192.168.103.2\E', '\\192.168.103.2/E'],
+							'result'	: 3,
+                                                        'explanation'   : 'Untuk pengaksesan  semua file sharing adalah \\192.168.103.2\E<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Skema kabel lurus (straight cable) antara konektor 1 dan konektor 2 pada kabel UTP yang benar adalah …',
+							'answers'	: ['Oranye putih – oranye – hijau putih – hijau – biru putih – biru – coklat putih – coklat	', 'Oranye putih – oranye – hijau putih – biru – biru putih – hijau – coklat putih – coklat  ', 'Oranye putih – oranye – hijau – biru – biru putih – hijau putih– coklat putih – coklat', 'Oranye putih – oranye – hijau putih – biru putih – biru – hijau – coklat putih – coklat'],
+							'result'	: 2,
+                                                        'explanation'   : 'Kabel straight merupakan kabel yang memiliki cara pemasangan yang sama antara ujung satu dengan ujung yang lainnya. Kabel straight digunakan untuk menghubungkan 2 device yang berbeda. Oleh karena itu skema yang dimiliki oleh kabel straight adalah 1-1, 2-2, 3-3, 4-4, 5-5, 6-6, 7-7, 8-8 dengan urutan warna Oranye putih – oranye – hijau putih – biru – biru putih – hijau – coklat putih – coklat<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Untuk membuat internet connection sharing, jika pada LAN Card 1 (pada komputer pertama) sudah terhubung internet, LAN Card 2 (pada komputer pertama) mempunyai default IP Address…',
+							'answers'	: ['192.168.0.1', '192.168.2.1', '192.168.1.0', '192.168.0.2'],
+							'result'	: 4,
+                                                        'explanation'   : 'Hal ini dikarenakan IP address pada 192.168.0.1 telah dipergunakan oleh LAN Card 1<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Jenis topologi yang tidak dimungkinkan terjadinya tabrakan data adalah…',
+							'answers'	: ['RING', 'STAR', 'BUS', 'TREE'],
+							'result'	: 1,
+                                                        'explanation'   : 'Pada topologi Ring semua workstation dan server dihubungkan sehingga terbentuk suatu pola lingkaran atau cincin. Tiap workstation ataupun server akan menerima dan melewatkan informasi dari satu komputer ke komputer lain, bila alamat- alamat yang dimaksud sesuai maka informasi diterima dan bila tidak informasi akan dilewatkan. Kelemahan dari topologi ini adalah setiap node dalam jaringan akan selalu ikut serta mengelola informasi yang dilewatkan dalam jaringan, sehingga bila terdapat gangguan di suatu node maka seluruh jaringan akan terganggu. Keunggulan topologi Ring adalah tidak terjadinya collision atau tabrakan pengiriman data seperti pada topologi Bus, karena hanya satu node dapat mengirimkan data pada suatu saat. <div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Suatu sistem yang memungkinkan nama suatu host/server pada jaringan komputer atau internet ditranslasikan menjadi IP Address disebut dengan…',
+							'answers'	: ['HTTP', 'SMTP', 'DNS', 'DHCP'],
+							'result'	: 3,
+                                                        'explanation'   : 'DNS memiliki kepanjangan Domain Name Server. DNS merupakan suatu sistem yang memungkinkan nama suatu host/server pada jaringan komputer atau internet ditranslasikan menjadi IP Address<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Angka / huruf yang terdapat pada masing-masing LAN Card yang berbeda dengan yang lain satu dikenal sebagai alamat…',
+							'answers'	: ['CAM Address', 'Media Access Control', 'LOC Address', 'POST Address'],
+							'result'	: 2,
+                                                        'explanation'   : 'MAC address adalah sebuah kode unik yang diberikan untuk setiap bagian dari perangkat keras yang terhubung ke Internet. Setiap alamat MAC adalah unik yang panjangnya terdiri dari 48 bit. 24 bit pertama dari MAC Address merepresentasikan vendor pembuat kartu tersebut  dan 24 bit sisanya merepresentasikan nomor kartu tersebut.  Pada lapisan OSI (Open System Interconnection) MAC Address menempati lapisan Data Link Layer (layer kedua setelah Physical Layer).<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						},
+						{
+							'question'	: 'Skema kabel silang (cross cable) antara konektor 1 dan konektor 2 pada kabel UTP yang benar adalah...<br/><center><img src=./soal/10.jpg></center>',
+							'answers'	: ['1-3, 2-6, 3-1, 4-4, 5-5, 6-2, 7-7, 8-8', '1-3, 2-5, 3-1, 4-4, 5-2, 6-6, 7-7, 8-8', '1-1, 2-2, 3-3, 4-4, 5-5, 6-6, 7-7, 8-8', '1-2, 2-1, 3-4, 4-3, 5-6, 6-5, 7-8, 8-7'],
+							'result'	: 1,
+                                                        'explanation'   : 'Kabel crossover merupakan kabel yang memiliki susunan berbeda antara ujung satu dengan ujung dua. Kabel cross over digunakan untuk menghubungkan 2 device yang sama. Oleh karena itu skema yang dimiliki kabel cross adalah 1-3, 2-6, 3-1, 4-4, 5-5, 6-2, 7-7, 8-8<div class=tekan-esc>Klik di area di luar jendela ini atau tekan ESC untuk menutup jendela ini.</div>'
+						}
+					],
+					'locale': //optional
+					{
+						'msg_not_found' : 'Soal tidak ditemukan!',
+						'msg_please_select_an_option' : 'Pilih salah satu jawaban dahulu sebelum klik next!',
+						'msg_question' : 'Pertanyaan',
+						'msg_you_scored' : 'Pemahaman kamu',
+						'msg_hover_to_review' : 'Pembahasan? Arahkan mouse ke tombol pertanyaan!',
+						'msg_explanation' : 'Penjelasan',
+						'bt_next' : 'Next',
+						'bt_back' : 'Back',
+						'bt_finish' : 'OK!'
+					},
+                                        'resultComments' : {
+                                            perfect: 'Sempurna!',
+                                            excellent: 'Excellent!',
+                                            good: 'Bagus!',
+                                            average: 'Bagus!',
+                                            bad: 'Mengecewakan!',
+                                            poor: 'Mengecewakan!',
+                                            worst: 'Ooops!'
+                                        }
+				});
+				
+		        			
+				
+			});
+		</script>
+
+</body></html>

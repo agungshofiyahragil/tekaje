@@ -1,0 +1,60 @@
+body {
+margin: 10px auto;
+width: 580px;
+}
+
+header,section,footer{
+display:block;
+border:1px solid red;
+}
+
+header{
+font-family: Arial;
+font-size: 15px;
+font-weight:bold;
+text-align: center;
+color: white;
+float:center;
+height:80px;
+background : red;
+}
+
+section{
+padding: 10px;
+height:350px;
+}
+
+footer{
+clear:both;
+height:20px;
+background : red;
+font-family: Arial;
+font-size: 15px;
+font-weight:bold;
+color: white;
+}
+
+.huruf_tabelatas{
+font-family: Arial;
+font-size: 15px;
+font-weight:bold;
+text-align: center;
+color: red;
+float:center;
+}
+
+.huruf_tabelisi{
+font-family: Arial Narrow;
+font-size: 15px;
+text-align: center;
+color: black;
+float:left;
+}
+
+.huruf_tabelbawah{
+font-family: arial;
+font-size: 15px;
+font-weight:bold;
+text-align: center;
+color: red;
+float:right;
