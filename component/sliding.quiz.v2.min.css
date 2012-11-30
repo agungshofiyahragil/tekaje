@@ -45,14 +45,14 @@ margin:20px auto 20px auto;
 padding: 50px;
 }
 .navigasi-kiri{
-	margin-left: 5px;
+	margin-left: 25px;
 	float: left;
 	position: relative;
 	text-align: left;
 }
 
 .navigasi-kanan{
-	margin-right: 5px;
+	margin-right: 25px;
 	float: right;
 	position: relative;
 	text-align: right;
